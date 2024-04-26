@@ -1,0 +1,319 @@
+/****** Font ******/
+
+.shrikhand-regular {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --main-color: #9356dc;
+    --second-color: #ff79da;
+    --third-color: #99e2d0;
+    --main-font: "Shrikhand", serif;
+    --second-font: "Roboto", sans-serif;
+}
+
+.header {
+    width: 100%;
+
+    img {
+        width: 162px;
+        height: 44px;
+        left: 16px;
+        gap: 0px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 14px;
+        margin-bottom: 14px;
+
+        i {
+            position: relative;
+            right: 65px;
+            color: black;
+
+            @media screen and (min-width: 1440px) {
+                position: relative;
+                right: 450px;
+            }
+        }
+
+        img {
+            width: 138px;
+            height: 27px;
+        }
+    }
+
+    .picture img {
+        width: 100%;
+        height: 275px;
+        object-fit: fill;
+    }
+
+    @media screen and (min-width: 1440px) {
+        .picture img {
+            object-fit: cover;
+        }
+    }
+
+}
+
+body {
+    margin: 0 auto;
+}
+
+.body {
+
+    .menu {
+        width: 100%;
+        height: 968px;
+        position: relative;
+        bottom: 85px;
+        border-radius: 26px 26px 0px 0px;
+        background-color: #f6f6f6;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -85px;
+
+
+        h1 {
+            justify-content: space-around;
+            font-family: var(--main-font);
+            font-size: 24px;
+            display: flex;
+            line-height: 50.82px;
+            text-align: left;
+        }
+
+        h2 {
+            font-family: var(--second-font);
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 18.75px;
+            text-align: left;
+            border-bottom: 3px solid #99e2d0;
+        }
+
+        i {
+            position: relative;
+        }
+    }
+
+    .title {
+        width: 30px;
+        border-bottom: 3px solid #99e2d0;
+        position: relative;
+        left: 17px;
+    }
+
+    .choix {
+        animation: arrived 1.5s ease-in-out 0.5s forwards;
+
+        @media screen and (min-width: 1440px) {
+            position: relative;
+            right: 365px;
+            animation: arrived 1.5s ease-in-out 0.5s forwards;
+        }
+    }
+
+    .entree {
+        background-color: white;
+        border-radius: 15.04px;
+        display: flex;
+        margin: 10px;
+        align-content: center;
+        justify-content: space-between;
+        overflow: hidden;
+        height: 69px;
+        animation: arrived 1.5s ease-in-out 0.5s forwards;
+
+        h3 {
+            margin: 0;
+            padding-left: 5px;
+            font-family: var(--second-font);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21.09px;
+            text-align: left;
+        }
+
+        &_txt {
+            padding-left: 5px;
+            margin: 0;
+            font-family: var(--second-font);
+            font-size: 12px;
+            font-weight: 100;
+            line-height: 15.63px;
+            text-align: left;
+            width: 93%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &_container {
+            flex: 1;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 5px;
+            white-space: nowrap;
+        }
+
+        &_title {
+            flex: 1;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+
+    }
+
+    .entree:hover .check {
+        margin-right: 0;
+    }
+
+    .check {
+        height: 100%;
+        background-color: lightgreen;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: -50px;
+        transition: 1s;
+
+        i {
+            color: white;
+        }
+    }
+
+    fa-regular fa-circle-check {
+        position: relative;
+
+    }
+
+    @media screen and (min-width: 1440px) {
+
+
+        width: 100%;
+        height: 980px;
+        align-items: center;
+        bottom: 57px;
+        display: FLEX;
+        position: relative;
+        justify-content: center;
+
+
+        .menu {
+            width: 1055px;
+            height: 980px;
+            align-items: center;
+            bottom: 57px;
+        }
+
+        .entree {
+            width: 70%;
+
+            &_container {
+                width: 634px;
+            }
+        }
+
+        .button {
+
+            margin-left: 113px;
+            margin-top: 40px;
+        }
+
+        .block {
+            right: 400px;
+            position: absolute;
+        }
+    }
+}
+
+footer {
+    background-color: #353535;
+    color: white;
+    width: 100%;
+    top: 2066px;
+    padding: 22px 25px 22px 25px;
+    gap: 16px;
+    box-sizing: border-box;
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+        font-family: var(--second-font);
+        font-size: 14px;
+        font-weight: 450;
+        line-height: 20px;
+        text-align: left;
+        padding: 2px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer {
+
+        &-logo {
+            font-family: var(--main-font);
+            font-size: 18px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 26.24px;
+            text-align: left;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            margin: 0;
+        }
+
+        & i {
+            padding-right: 8px;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+
+
+        &-bis {
+            flex-direction: row;
+        }
+
+        a {
+            padding: 15px;
+        }
+
+        div {
+            flex-direction: row;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+
+
+        }
+    }
+}

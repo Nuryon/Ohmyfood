@@ -138,6 +138,7 @@ body {
   justify-content: space-between;
   overflow: hidden;
   height: 69px;
+  animation: arrived 1.5s ease-in-out 0.5s forwards;
 }
 
 .entree h3 {
@@ -166,6 +167,28 @@ body {
 
 .entree span {
   font-weight: bold;
+}
+
+.choix {
+
+  animation: arrived 1s ease-in-out 0.5s forwards;
+
+}
+
+@keyframes arrived {
+  0% {
+    opacity: 0;
+    margin-left: 27.9px;
+    margin-right: -117px;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .button {
@@ -256,8 +279,14 @@ nav i {
   transition: 1s;
 }
 
+.check i {
+  color: white;
+}
+
+
 fa-regular fa-circle-check {
   position: relative;
+
 }
 
 .entree:hover .check {
@@ -320,7 +349,27 @@ fa-regular fa-circle-check {
 
   .entree {
     width: 70%;
+    animation: arrived 1.5s ease-in-out 0.5s forwards;
+    opacity: 0;
   }
+
+  @keyframes arrived {
+    0% {
+      opacity: 0;
+      margin-left: .90px;
+      margin-right: -90px;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+
 
   .button {
 
@@ -330,7 +379,7 @@ fa-regular fa-circle-check {
 
   .choix {
     position: relative;
-
+    animation: arrived 1s ease-in-out 0.5s forwards;
     right: 360px;
   }
 

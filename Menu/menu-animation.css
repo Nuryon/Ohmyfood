@@ -1,0 +1,69 @@
+.block {
+  position: absolute;
+  right: 40px;
+}
+.block i {
+  color: blueviolet;
+}
+.block .empty_heart {
+  position: absolute;
+  transition: 1s;
+}
+.block .full_heart {
+  position: absolute;
+  opacity: 0;
+  transition: 1s;
+}
+
+.block:hover .empty_heart {
+  opacity: 0;
+}
+
+.block:hover .full_heart {
+  opacity: 1;
+}
+
+@keyframes arrived {
+  0% {
+    opacity: 0;
+    margin-left: 27.9px;
+    margin-right: -117px;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes arrived {
+  0% {
+    opacity: 0;
+    margin-left: 0.9px;
+    margin-right: -90px;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.button {
+  border-radius: 25px;
+  background: linear-gradient(180deg, var(--second-color), var(--main-color) 100%);
+  width: 186px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 20px 50px 30px 66px;
+  border: none;
+  text-decoration: none;
+}
+
+.button:hover {
+  transform: scale(1.005);
+  opacity: 0.8;
+}/*# sourceMappingURL=menu-animation.css.map */
