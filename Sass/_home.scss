@@ -68,6 +68,7 @@
         font-weight: 300;
         padding: 10px;
         text-align: center;
+        align-items: center;
 
         &-title {
             font-family: var(--second-font);
@@ -177,6 +178,7 @@ body {
         font-family: var(--second-font);
         position: absolute;
         left: -10px;
+        font-size: 14px;
     }
 
     @media screen and (min-width: 1024px) {
@@ -231,8 +233,13 @@ section {
     }
 
     .restaurant {
+
+        width: 100%;
         margin-top: 20px;
-        margin-left: 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         & span {
             font-family: Roboto;
@@ -266,12 +273,20 @@ section {
             background-color: white;
             border-radius: 15px;
             margin-bottom: 20px;
+            position: relative;
 
-            & img {
+            & a {
                 width: 100%;
                 height: 70%;
+                display: block;
+            }
+
+            & img {
+
                 border-radius: 15px 15px 0px 0px;
                 object-fit: cover;
+                width: 100%;
+                height: 100%;
             }
         }
 
@@ -292,12 +307,9 @@ section {
     }
 
     .new {
-        display: flex;
-        position: relative;
-        width: 70px;
-        height: 25px;
-        bottom: 96px;
-        left: 202px;
+
+        position: absolute;
+
         gap: 0px;
         justify-content: center;
         align-items: center;
@@ -308,9 +320,11 @@ section {
         font-family: Roboto;
         font-size: 12px;
         font-weight: 500;
-        line-height: 16.41px;
-        text-align: center;
+
         box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.57);
+        padding: 5px 10px;
+        top: 15px;
+        right: 15px;
 
         &_none {
             display: flex;
@@ -342,7 +356,7 @@ section {
         flex-direction: column;
         width: 100%;
         position: relative;
-        bottom: 25px;
+
         margin-left: 10px;
         justify-content: center;
 
@@ -437,8 +451,9 @@ section {
         }
 
         .new {
-            left: 430px;
-            bottom: 145px;
+            padding: 5px 10px;
+            top: 24px;
+            right: 38px;
         }
     }
 }

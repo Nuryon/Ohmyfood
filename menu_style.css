@@ -164,7 +164,7 @@ body {
 }
 .body .check {
   height: 100%;
-  background-color: lightgreen;
+  background-color: #99E2D0;
   width: 50px;
   display: flex;
   justify-content: center;
