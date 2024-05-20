@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 .shrikhand-regular {
   font-family: "Shrikhand", serif;
   font-weight: 400;
@@ -24,26 +23,22 @@
 .header {
   width: 100%;
 }
-
 .header img {
   width: 162px;
   height: 44px;
   left: 16px;
   gap: 0px;
 }
-
 .header .logo {
   display: flex;
   justify-content: center;
   margin-top: 14px;
   margin-bottom: 14px;
 }
-
 .header .logo img {
-  width: 138px;
-  height: 27px;
+  width: 162px;
+  height: 40px;
 }
-
 .header .ville {
   display: flex;
   justify-content: center;
@@ -52,13 +47,11 @@
   box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.57);
   position: relative;
 }
-
 .header .ville p {
   font-family: var(--second-font);
   font-size: 16px;
   padding-left: 25px;
 }
-
 .header .info {
   display: flex;
   justify-content: center;
@@ -71,7 +64,6 @@
   text-align: center;
   align-items: center;
 }
-
 .header .info-title {
   font-family: var(--second-font);
   font-size: 20px;
@@ -79,17 +71,14 @@
   line-height: 28.13px;
   text-align: center;
 }
-
 @media screen and (min-width: 1024px) {
   .header body {
     margin: 0 auto;
   }
-
   .header .info {
     background-color: white;
     align-items: center;
   }
-
   .header p {
     font-family: Roboto;
     font-size: 18px;
@@ -101,10 +90,9 @@
 }
 
 /********BODY*********/
-body {
+.body{
   margin: 0;
 }
-
 @media screen and (min-width: 1024px) {
   body {
     margin: 0 auto;
@@ -119,7 +107,6 @@ body {
   text-align: left;
   margin: 0 15px;
 }
-
 .fonction-title .nav {
   background-color: white;
   display: flex;
@@ -129,7 +116,6 @@ body {
   margin-left: 26px;
   margin: 0;
 }
-
 .fonction-title .nav-block {
   background-color: #f6f6f6;
   border-radius: 20px;
@@ -143,25 +129,21 @@ body {
   box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.57);
   position: relative;
 }
-
 .fonction-title .nav-block p {
   font-weight: 500;
+  size: 16px;
   font-size: 14px;
 }
-
 .fonction-title .nav-block i {
   padding-right: 10px;
 }
-
 .fonction-title .nav i {
   color: var(--main-color);
 }
-
 .fonction-title .title {
   font-size: 16px;
   font-family: var(--second-font);
 }
-
 .fonction-title .elipse {
   width: 20px;
   height: 20px;
@@ -176,23 +158,19 @@ body {
   left: -10px;
   font-size: 14px;
 }
-
 @media screen and (min-width: 1024px) {
   .fonction-title .fonction-title {
     margin: 0 150px;
   }
-
   .fonction-title .nav {
     flex-direction: row;
     margin: 0 150px;
   }
-
   .fonction-title .nav-block {
     width: 30%;
     height: 72.38px;
     border-radius: 20px;
   }
-
   .fonction-title .title {
     font-family: Roboto;
     font-size: 24px;
@@ -200,7 +178,6 @@ body {
     line-height: 46.88px;
     margin: 0 150px;
   }
-
   .fonction-title .Main-title {
     font-family: Roboto;
     font-size: 24px;
@@ -215,12 +192,10 @@ section {
   background-color: #eaeaea;
   padding-bottom: 20px;
 }
-
 section h1 {
   padding-left: 15px;
   padding-top: 15px;
 }
-
 section .restaurant {
   width: 100%;
   margin-top: 20px;
@@ -228,7 +203,6 @@ section .restaurant {
   flex-direction: column;
   align-items: center;
 }
-
 section .restaurant span {
   font-family: Roboto;
   font-size: 14px;
@@ -236,7 +210,6 @@ section .restaurant span {
   line-height: 21.09px;
   text-align: left;
 }
-
 section .restaurant p {
   font-family: Roboto;
   font-size: 12px;
@@ -245,7 +218,6 @@ section .restaurant p {
   text-align: left;
   margin: 0;
 }
-
 section .restaurant-title {
   font-family: Roboto;
   font-size: 11px;
@@ -254,7 +226,6 @@ section .restaurant-title {
   text-align: left;
   margin: 0;
 }
-
 section .restaurant-card {
   width: 96%;
   height: 160px;
@@ -263,21 +234,18 @@ section .restaurant-card {
   margin-bottom: 20px;
   position: relative;
 }
-
 section .restaurant-card a {
   width: 100%;
   height: 70%;
   display: block;
 }
-
 section .restaurant-card img {
   border-radius: 15px 15px 0px 0px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
 }
-
 section .restaurant-card2 {
   width: 96%;
   height: 160px;
@@ -285,15 +253,13 @@ section .restaurant-card2 {
   border-radius: 15px;
   margin-bottom: 20px;
 }
-
 section .restaurant-card2 img {
   width: 100%;
   height: 70%;
   border-radius: 15px 15px 0px 0px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
-
 section .new {
   position: absolute;
   gap: 0px;
@@ -311,7 +277,6 @@ section .new {
   top: 15px;
   right: 15px;
 }
-
 section .new_none {
   display: flex;
   position: relative;
@@ -334,7 +299,6 @@ section .new_none {
   box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.57);
   opacity: 0;
 }
-
 section .nouveauté {
   display: flex;
   flex-direction: column;
@@ -344,40 +308,32 @@ section .nouveauté {
   margin-top: 4px;
   justify-content: center;
 }
-
 section .nouveauté .block {
   position: absolute;
   right: 40px;
-  bottom: 30px;
+  top: 13px;
 }
-
 section .nouveauté .block i {
   color: blueviolet;
 }
-
 section .nouveauté .block .empty_heart {
   position: absolute;
   transition: 1s;
 }
-
 section .nouveauté .block .full_heart {
   position: absolute;
   opacity: 0;
   transition: 1s;
 }
-
 section .nouveauté .block:hover .empty_heart {
   opacity: 0;
 }
-
 section .nouveauté .block:hover .full_heart {
   opacity: 1;
 }
-
 section .test {
   padding-left: 15px;
 }
-
 @media screen and (min-width: 1024px) {
   section .restaurant {
     flex-direction: row;
@@ -387,28 +343,24 @@ section .test {
     margin: 20px 0px;
     box-sizing: border-box;
   }
-
   section .restaurant-body {
     background-color: white;
     height: 608px;
     max-width: 1440px;
     margin: 0 150px;
   }
-
   section .restaurant-card {
     width: 40%;
     height: 251px;
     border-radius: 15px;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
   }
-
   section .restaurant-card2 {
     width: 40%;
     height: 251px;
     border-radius: 15px;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
   }
-
   section .restaurant span {
     font-family: Roboto;
     font-size: 18px;
@@ -418,7 +370,6 @@ section .test {
     margin-top: 10px;
     margin-left: 15px;
   }
-
   section .restaurant p {
     font-family: Roboto;
     font-size: 17px;
@@ -428,11 +379,9 @@ section .test {
     margin-left: 15px;
     margin-bottom: 5px;
   }
-
   section h1 {
     margin: 0 150px;
   }
-
   section .new {
     padding: 5px 10px;
     top: 24px;
@@ -449,12 +398,10 @@ footer {
   gap: 16px;
   box-sizing: border-box;
 }
-
 footer div {
   display: flex;
   flex-direction: column;
 }
-
 footer a {
   font-family: var(--second-font);
   font-size: 14px;
@@ -465,7 +412,6 @@ footer a {
   color: white;
   text-decoration: none;
 }
-
 footer .footer-logo {
   font-family: var(--main-font);
   font-size: 18px;
@@ -477,10 +423,14 @@ footer .footer-logo {
   padding-bottom: 10px;
   margin: 0;
 }
-
 footer .footer i {
   padding-right: 8px;
 }
+
+.font{
+padding-right: 4px;
+}
+
 
 @media screen and (min-width: 1024px) {
   footer {
@@ -488,24 +438,18 @@ footer .footer i {
     flex-direction: row-reverse;
     align-items: center;
   }
-
   footer-bis {
     flex-direction: row;
   }
-
   footer a {
     padding: 15px;
   }
-
   footer div {
     flex-direction: row;
   }
-
   footer .footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -158,6 +158,11 @@ body {
 }
 .body .entree span {
   font-weight: bold;
+  font-family: Roboto;
+  font-size: 15.04px;
+  font-weight: 700;
+  line-height: 17.63px;
+  text-align: center;
 }
 .body .entree:hover .check {
   margin-right: 0;
